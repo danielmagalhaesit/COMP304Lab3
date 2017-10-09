@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AntonioMagalhaes_COMP304Lab3</string>
+
+    <string name="color">Color</string>
+    <string name="thickness">Thickness</string>
+
+    <string-array name="thickness_array">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array name="colors_array">
+        <item>red</item>
+        <item>blue</item>
+        <item>green</item>
+    </string-array>
+</resources>
