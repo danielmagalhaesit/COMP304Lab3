@@ -75,13 +75,27 @@ public class Exercise1Activity extends AppCompatActivity {
         mCanvas = new Canvas(mBitmap);
         drawbleImageView.setImageBitmap(mBitmap);
 
+//        keyDown.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                endy=endy+10;
+//                drawLine(mCanvas);
+//            }
+//        });
+
         keyDown.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
+
                 if(motionEvent.getAction() == MotionEvent.ACTION_DOWN){
                     endy=endy+10;
                     drawLine(mCanvas);
                 }
+
+                if(motionEvent.getAction() == MotionEvent.ACTION_UP){
+
+                }
+
                 return true;
             }
         });
@@ -92,6 +106,11 @@ public class Exercise1Activity extends AppCompatActivity {
                 if(motionEvent.getAction() == MotionEvent.ACTION_DOWN){
                     endy=endy-10;
                     drawLine(mCanvas);
+                }
+
+                if(motionEvent.getAction() == MotionEvent.ACTION_UP){
+
+
                 }
                 return true;
             }
@@ -158,6 +177,7 @@ public class Exercise1Activity extends AppCompatActivity {
         canvas.drawLine(startx, starty, endx, endy, mPaint);
         startx=endx;
         starty=endy;
+        drawbleImageView.invalidate();
 
     }
 

@@ -1,9 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.android.daniel.antoniomagalhaes_comp304lab3.Exercise3Activity">
+    android:orientation="vertical"
+    android:background="@drawable/globe_thumb"
+    >
+    <LinearLayout
+        android:id="@+id/ButtonRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-</android.support.constraint.ConstraintLayout>
+        <Button
+            android:id="@+id/btn_start_exercise3"
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:text="Start" >
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_stop_exercise3"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:text="Stop" >
+
+        </Button>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ImageViewForTweening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

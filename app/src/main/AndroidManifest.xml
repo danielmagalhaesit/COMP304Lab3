@@ -16,9 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Exercise1Activity" />
-        <activity android:name=".Exercise2Activity" />
-        <activity android:name=".Exercise3Activity"></activity>
+        <activity android:name=".Exercise1Activity" android:parentActivityName=".MainActivity" />
+        <activity android:name=".Exercise2Activity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Exercise3Activity" android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>
